@@ -41,33 +41,52 @@
 
 @import "foundation/components/block-grid", "foundation/components/grid";
 
-$white       : #FFFFFF;
-$ghost       : #FAFAFA;
-$snow        : #F9F9F9;
-$vapor       : #F6F6F6;
-$white-smoke : #F5F5F5;
-$silver      : #EFEFEF;
-$smoke       : #EEEEEE;
-$gainsboro   : #DDDDDD;
-$iron        : #CCCCCC;
-$base        : #AAAAAA;
-$aluminum    : #999999;
-$jumbo       : #888888;
-$monsoon     : #777777;
-$steel       : #666666;
-$charcoal    : #555555;
-$tuatara     : #444444;
-$oil         : #333333;
-$jet         : #222222;
-$black       : #000000;
+// $white       : #FFFFFF;
+// $ghost       : #FAFAFA;
+// $snow        : #F9F9F9;
+// $vapor       : #F6F6F6;
+// $white-smoke : #F5F5F5;
+// $silver      : #EFEFEF;
+// $smoke       : #EEEEEE;
+// $gainsboro   : #DDDDDD;
+// $iron        : #CCCCCC;
+// $base        : #AAAAAA;
+// $aluminum    : #999999;
+// $jumbo       : #888888;
+// $monsoon     : #777777;
+// $steel       : #666666;
+// $charcoal    : #555555;
+// $tuatara     : #444444;
+// $oil         : #333333;
+// $jet         : #222222;
+// $black       : #000000;
+
+$bg-grey: 			#fdfdfd;
+$text-primary: 		#313233;
+$text-secondary:	#5c5d5f;
+
+$base-font-size:	rem-calc(12px);
+
+$serif-font-stack: "Didot", "Baskerville", "Palatino Linotype", "Palatino", "Times", serif;
+$sans-serif-font-stack: "Helvetica Neue", "Helvetica", "Source Sans Pro", "Arial", sans-serif;
 
 .title {
-	text-align: center;
-	margin-top: calc(45vh);
-	font-size: rem-calc(48px);
+	// text-align: center;
+	margin-top: calc(30vh);
+	font-size: 5 * $base-font-size;
+	font-family: $serif-font-stack;
+	color: $text-primary;
+}
+
+.text {
+	font-size: 2 * $base-font-size;
+	font-family: $sans-serif-font-stack;
+	font-weight: 100;
+	color: $text-secondary;
+	// text-align: center;
 }
 
 .section {
-	background: $ghost;
+	background: $bg-grey;
 	height: 100vh;
 }
