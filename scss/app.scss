@@ -73,9 +73,9 @@ $sans-serif-font-stack: "Helvetica Neue", "Helvetica", "Source Sans Pro", "Arial
 body {
 	background: $bg-grey;
 	font-family: $sans-serif-font-stack;
-	font-size: 1.5 * $base-font-size;
+	font-size: 2 * $base-font-size;
 	font-weight: 100;
-	color: $text-secondary;
+	color: $text-primary;
 }
 
 .title {
@@ -87,16 +87,16 @@ body {
 }
 
 .title.primary {
-	font-size: 5 * $base-font-size;
+	font-size: 5.5 * $base-font-size;
 }
 
 .title.secondary {
 	margin-top: calc(6.25vh);
-	font-size: 3 * $base-font-size;
+	font-size: 4 * $base-font-size;
 }
 
 .subtitle {
-	font-size: 2 * $base-font-size;
+	font-size: 2.5 * $base-font-size;
 	font-family: $sans-serif-font-stack;
 	font-weight: 100;
 	color: $text-secondary;
