@@ -70,15 +70,32 @@ $base-font-size:	rem-calc(12px);
 $serif-font-stack: "Didot", "Baskerville", "Palatino Linotype", "Palatino", "Times", serif;
 $sans-serif-font-stack: "Helvetica Neue", "Helvetica", "Source Sans Pro", "Arial", sans-serif;
 
-.title {
-	// text-align: center;
-	margin-top: calc(30vh);
-	font-size: 5 * $base-font-size;
-	font-family: $serif-font-stack;
-	color: $text-primary;
+body {
+	background: $bg-grey;
+	font-family: $sans-serif-font-stack;
+	font-size: 1.5 * $base-font-size;
+	font-weight: 100;
+	color: $text-secondary;
 }
 
-.text {
+.title {
+	// text-align: center;
+	font-family: $serif-font-stack;
+	color: $text-primary;
+	overflow: hidden;
+	line-height: 1.25;
+}
+
+.title.primary {
+	font-size: 5 * $base-font-size;
+}
+
+.title.secondary {
+	margin-top: calc(6.25vh);
+	font-size: 3 * $base-font-size;
+}
+
+.subtitle {
 	font-size: 2 * $base-font-size;
 	font-family: $sans-serif-font-stack;
 	font-weight: 100;
@@ -87,6 +104,19 @@ $sans-serif-font-stack: "Helvetica Neue", "Helvetica", "Source Sans Pro", "Arial
 }
 
 .section {
-	background: $bg-grey;
-	height: 100vh;
+	margin-top: 2.5vh !important;
+	margin-bottom: 2.5vh !important;
+}
+
+.section.first {
+	height: 50vh;
+	margin-top: calc(30vh) !important;
+}
+
+.block {
+	display: block;
+	height: 100%;
+	width: calc(100% - 1vw);
+	margin-bottom: 1vw;
+	background: tomato;
 }
