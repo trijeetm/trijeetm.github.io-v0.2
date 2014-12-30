@@ -1,5 +1,5 @@
 @import "settings";
-// @import "foundation";	
+@import "foundation";	
 
 // Or selectively include components
 // @import
@@ -44,7 +44,7 @@
 $bg-grey: 			#fdfdfd;
 $text-primary: 		#313233;
 $text-secondary:	#404142;
-$text-tertiary:		#6A6C6E;
+$text-tertiary:		#9A9C9E;
 
 $base-font-size:	rem-calc(12px);
 
@@ -115,11 +115,19 @@ body {
 	text-align: center;
 	margin-top: 0.5 * $base-font-size;
 
+	* {
+		@include single-transition(all, 200ms, ease-out);
+	}
+
 	i {
 		text-decoration: none;
 		font-size: 3 * $base-font-size;
 		padding-left: $base-font-size;
 		padding-right: $base-font-size;
+	}
+
+	i:hover {
+		color: $text-tertiary;
 	}
 }
 
