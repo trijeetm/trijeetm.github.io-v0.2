@@ -6119,14 +6119,39 @@ body {
 
 .block {
   display: block;
-  min-height: 30vh;
+  height: calc(30vh);
   width: calc(100% - 10px);
   margin-bottom: 10px;
-  background: tomato;
-  padding: 15px;
-  color: #F6F6F6 !important; }
-  .block * {
-    color: #F6F6F6 !important; }
+  background: #fdfdfd;
+  outline: 1px solid #ededed;
+  color: #313233 !important;
+  overflow: hidden; }
+  .block .cover {
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; }
+  .block .block-info {
+    display: block;
+    min-height: 50px;
+    background: rgba(255, 255, 255, 0.97);
+    width: calc(100% - 10px);
+    z-index: 10;
+    position: absolute;
+    bottom: 10px;
+    padding: 0.5625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    transition: all 200ms ease-out;
+    border-top: 1px solid #ededed; }
+    .block .block-info .title {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      color: #404142; }
+    .block .block-info .tags, .block .block-info .date {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 0.75rem;
+      color: #9A9C9E; }
 
 a {
   text-decoration: none;
@@ -6135,3 +6160,23 @@ a {
 
 a:hover {
   color: #313233; }
+
+#portfolio {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; }
+  #portfolio h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    font-size: 1.5rem; }
+  #portfolio h4 {
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.75rem; }
+
+footer {
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  margin-top: 4vw;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 0.9rem;
+  color: #9A9C9E;
+  border-top: 1px solid #ededed;
+  background: #fafafa; }

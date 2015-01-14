@@ -168,15 +168,66 @@ body {
 
 .block {
 	display: block;
-	min-height: 30vh;
+	height: calc(30vh);
 	width: calc(100% - 10px);
 	margin-bottom: 10px;
-	background: tomato;
-	padding: 15px;
-	color: $vapor !important;
+	background: $bg-grey;
+	outline: 1px solid #ededed;
+	color: $text-primary !important;
+	overflow: hidden;
 
 	* {
-		color: $vapor !important;
+		// color: $vapor !important;
+	}
+
+	.cover {
+		// height: calc(25vw - 50px);
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+
+		img {
+
+		}
+	}
+
+	.block-info {
+		display: block;
+		min-height: 50px;
+		background: rgba(255, 255, 255, 0.97);
+		width: calc(100% - 10px);
+		z-index: 10;
+		position: absolute;
+		bottom: 10px;
+		padding: 0.75 * $base-font-size;
+		padding-left: $base-font-size;
+		padding-right: $base-font-size;
+		@include single-transition(all, 200ms, ease-out);
+		border-top: 1px solid #ededed;
+
+		.title {
+			font-family: $sans-serif-light-font-stack;
+			font-size: 2 * $base-font-size;
+			line-height: 1.5 * 2 * $base-font-size;
+			color: $text-secondary;
+		}
+
+		.tags {
+			font-family: $sans-serif-light-font-stack;
+			font-size: 1 * $base-font-size;
+			color: $text-tertiary;
+		}
+
+		.date {
+			@extend .tags;
+		}
+	}
+}
+
+.block:hover {
+
+	.block-info {
+		// min-height: 100px;
 	}
 }
 
@@ -188,4 +239,30 @@ a {
 
 a:hover {
 	color: $text-primary;
+}
+
+#portfolio {
+	font-family: $sans-serif-light-font-stack !important;
+
+	h1 {
+		font-family: $sans-serif-light-font-stack !important;
+		font-size: 2 * $base-font-size;		
+	}
+
+	h4 {
+		font-family: $sans-serif-thin-font-stack;
+		font-size: 1 * $base-font-size;
+	}
+}
+
+footer {
+	text-align: center;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	margin-top: 4vw;
+	font-family: $sans-serif-light-font-stack;
+	font-size: 1.2 * $base-font-size;
+	color: $text-tertiary;
+	border-top: 1px solid #ededed;
+	background: #fafafa;
 }
