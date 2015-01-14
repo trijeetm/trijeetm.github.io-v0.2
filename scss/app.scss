@@ -208,7 +208,8 @@ body {
 		.title {
 			font-family: $sans-serif-light-font-stack;
 			font-size: 2 * $base-font-size;
-			line-height: 1.5 * 2 * $base-font-size;
+			line-height: 1.25 * 2 * $base-font-size;
+			margin-bottom: 0.25 * $base-font-size;
 			color: $text-secondary;
 		}
 

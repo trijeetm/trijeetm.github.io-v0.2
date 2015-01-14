@@ -6146,7 +6146,8 @@ body {
     .block .block-info .title {
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-size: 1.5rem;
-      line-height: 2.25rem;
+      line-height: 1.875rem;
+      margin-bottom: 0.1875rem;
       color: #404142; }
     .block .block-info .tags, .block .block-info .date {
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
