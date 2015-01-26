@@ -24,8 +24,12 @@ $(document).foundation();
 $(document).ready(function() {
 	var elems = $('.fadeUp');
 	elems.each(function(index, el) {
-		$(el).addClass('animated');
-		$(el).addClass('fadeInUp');
+		// $(el).addClass('animated');
+		// $(el).addClass('fadeInUp');
+		setTimeout(function() {
+			$(el).addClass('animated');
+			$(el).addClass('fadeInUp');
+		}, 500 * index);
 	});
 });
 

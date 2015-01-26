@@ -6219,3 +6219,5 @@ footer {
   border-top: 1px solid #ededed;
   background: #fafafa; }
 
+.fadeUp {
+  opacity: 0; }
