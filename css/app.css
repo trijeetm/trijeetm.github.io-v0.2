@@ -6073,7 +6073,6 @@ body {
 .title {
   font-family: "Didot", "Bodoni MT", "Palatino Linotype", "Palatino", "Times", serif;
   color: #313233 !important;
-  overflow: hidden;
   line-height: 1.25; }
 
 .title.primary {
