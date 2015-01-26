@@ -80,7 +80,7 @@ body {
 .text {
 	font-size: 1.5 * $base-font-size;
 	font-family: $sans-serif-light-font-stack;
-	font-weight: 400;
+	font-weight: 200;
 	line-height: 1.65;
 	margin-top: $base-font-size;
 	color: $text-secondary;
@@ -130,7 +130,7 @@ body {
 .subtitle {
 	font-size: 3 * $base-font-size;
 	font-family: $sans-serif-thin-font-stack;
-	font-weight: 400 !important;
+	font-weight: 100 !important;
 	// color: $text-secondary;
 	// text-align: center;
 }
@@ -188,6 +188,7 @@ body {
 
 		.title {
 			font-family: $sans-serif-light-font-stack;
+			font-weight: 200;
 			font-size: 2 * $base-font-size;
 			line-height: 1.25 * 2 * $base-font-size;
 			margin-bottom: 0.25 * $base-font-size;
@@ -217,6 +218,7 @@ body {
 
 .tags {
 	font-family: $sans-serif-light-font-stack;
+	font-weight: 200;
 	font-size: 1.25 * $base-font-size;
 	color: $text-tertiary;
 }
@@ -297,6 +299,7 @@ a:hover {
 		color: $text-tertiary;
 		text-decoration: underline;
 		font-family: $sans-serif-light-font-stack;
+		font-weight: 200;
 
 		&:hover {
 			color: $text-secondary;
