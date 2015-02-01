@@ -29,7 +29,7 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$(el).addClass('animated');
 			$(el).addClass('fadeInUp');
-		}, 500 * index);
+		}, 400 * index);
 	});
 });
 

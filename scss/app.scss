@@ -148,10 +148,10 @@ body {
 .block {
 	display: block;
 	height: calc(30vh);
-	width: calc(100% - 10px);
-	margin-bottom: 10px;
+	width: calc(100% - 24px);
+	margin-bottom: 24px;
 	background: $bg-grey;
-	outline: 1px solid #ededed;
+	outline: 1px solid #ebebeb;
 	color: $text-primary !important;
 	overflow: hidden;
 
@@ -176,10 +176,10 @@ body {
 		max-height: 30vh;
 		min-height: 6 * $base-font-size;
 		background: rgba(255, 255, 255, 0.97);
-		width: calc(100% - 10px);
+		width: calc(100% - 24px);
 		z-index: 10;
 		position: absolute;
-		bottom: 10px;
+		bottom: 24px;
 		padding: 0.75 * $base-font-size;
 		padding-left: $base-font-size;
 		padding-right: $base-font-size;
